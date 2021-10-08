@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "holicxslave-revive",
+  "private_key_id": "0e5473dacb149c3bb3ca7e1e27f8757b690934f9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDYw7C7ElGcxVqD\ne6WL4P0eZh9xeop+Xlht0JvIx5yNvggX5R+XT4ai65YWoKYg7nYP5CfkEbXHApx9\nS2QUl1GDFkcE8c/HGSX3Pwhvd7akcfYY8zCE0GaNKEkdFD3hDLeJb+UTPG1WtLM1\n4fHDNgJrJ2qWcZV3lYVCrtjkIkqAjfDGI30y21yp1ZD/rFPJmGSEfWIVQ55bKXj3\nunVhyvoApOjYU3jyxQWO/fKdVpCzSM0Zuu5Lqv5lo5mhaWBkb6sy0X40wcysmSiY\nQGnCRkWo4NkF1iLtlVBnbNQaVnk1IiDb7qg3DMqODkRcroExGarAF/ykB0+5RsrK\n0ktT3TgVAgMBAAECggEAGwlTfI3VIJrsBnzQYfFK2PUPZHHOnuLpIC9WEvW0xOgo\nLcTOCysn5Z/BTWq1teNQVfyU7ik4VU1x093oqnnSOKm5a3g2vIRaPCvAQ1j47qtp\nMOT6TwKIXABjmC0rZ6vUo5+RgLP3hkpNFQIsy7armA5nSML7i9oaMD5LPq85QC3Z\nTzSnAmpCMgDpWz1BFxR0SVmDW6V4C0BJYhhdwL+WemwdknBTVs6hENv7X6gHmJT/\nXMNBD76qbtg454LxXf5hgcKUyp4WfCkVSZ7a3GwHshDJJMfKLxKUONVHOP7j//Bs\nEjDiSMwjuL755rVIeC2fbVvP8IYK2KQuuLqils+y0QKBgQDtyhzaFjbNBbLpdath\nTzqh6uhPrRuvLKETMlw1tj+2cI8cGJaAaEXcTIzoHYJ2LF3sMbpeAikYKu9kCDfJ\nyPelnt6pAw3bxHM2SwWImR6ekVQxkms8eWoHjALmCsW67ydGcQNTxsggVXnGWnCf\nh+beRKgVL/txzIJ+lCTQ7rzXhQKBgQDpXWDxe5MTDu8KB22iIR/nW4pCv7HgLHKY\nmoJ6+4bnVNgwnrN3C5sHu/ANFihDMJQ9SyqjB+myYdywD0BLvHJUao0qY150qz+e\n9V8BWMryur1Sxesx5x7xp79E85JPLbgFQ8f7BzkBmfbtbpJ/LOEaUsNtZagHlmgq\nNIVtonobUQKBgAp5l9HHnrxjXuFH7LfJrLSLS5aO8qRB3Aqjckpvb9kSlktPjfm0\nHje5K4/iFOgtxilse2A+yh6lbYxDjGmYL8ic+gQJ/WdL/SNMJL9Ct4WWs1XHtG+i\njZgtg8csfE9iz6Ebw2DCZfh+q3GgdEuiyfnKnnjodzQpJSp8Ti7iBXGdAoGBAIub\n0I5HFnK1YW4HiaAP3w1C51ENa3WoQZpn/R1j8o3cZUWY+9aBO+sBlRfPJKElo9mT\naVuFNVsBTsyJIzbr8x3rbK5qKizz8ii/tGmS3D8gVnj5bL46/XkmmLfAW8xAlrGX\nnkDgTktV97KNjtjEWZqs3rtIsKBxa7msGBLBu/kxAoGAJZkT7UJQjLPs3WZ3YtWJ\nM5JZtlk+e9T+10ySuuz/DxlrwWayLx9hvfQPQKvBly3Kwire/PmOkvYsg+hGsu+q\nxHXuR6tPasUl72xnTSUqR0TdtbX20uhGN6HZShhDWDr5611NMGt6N2q8/5buBHvx\nPrrbWVLUijDPPhZ7fuQHmug=\n-----END PRIVATE KEY-----\n",
+  "client_email": "mfc-w049kyoks5a51nsdtefh8wb9pu@holicxslave-revive.iam.gserviceaccount.com",
+  "client_id": "101395743789761936658",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mfc-w049kyoks5a51nsdtefh8wb9pu%40holicxslave-revive.iam.gserviceaccount.com"
+}

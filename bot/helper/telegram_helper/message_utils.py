@@ -68,8 +68,8 @@ def delete_all_messages():
 
 def update_all_messages():
     msg = get_readable_message()
-    msg += f"<b>BOT UPTIME:</b> <b>{get_readable_time((time.time() - botStartTime))}</b>\n\n" \
-           f"<b>CPU : {psutil.cpu_percent()}%</b>" \
+    msg += f" <b>BOT UPTIME:</b> <b>{get_readable_time((time.time() - botStartTime))}</b>\n\n" \
+           f" <b>CPU : {psutil.cpu_percent()}%</b>" \
            f" <b>RAM : {psutil.virtual_memory().percent}%</b>" \
            f" <b>DISK : {psutil.disk_usage('/').percent}%</b>"
     with download_dict_lock:

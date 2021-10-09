@@ -41,7 +41,7 @@ def stats(update, context):
             f'<b>├  🎮 RAM : {memory}%</b>\n' \
             f'<b>├  💽 DISK : {disk}%</b>\n' \
             f'<b>│</b>\n' \
-            f'<b>╰──「 🚸 @holicxslavee 🚸 」</b>'
+            f'<b>╰──「https://t.me/wanpissu」</b>'
     sendMessage(stats, context.bot, update)
 
 

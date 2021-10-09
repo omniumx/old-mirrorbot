@@ -14,8 +14,8 @@ URL_REGEX = r"(?:(?:https?|ftp):\/\/)?[\w/\-?=%.]+\.[\w/\-?=%.]+"
 
 
 class MirrorStatus:
-    STATUS_UPLOADING = "<code>Uploading</code>"
-    STATUS_DOWNLOADING = "<code>Downloading</code>"
+    STATUS_UPLOADING = "<code>Uploading...</code>"
+    STATUS_DOWNLOADING = "<code>Downloading...</code>"
     STATUS_WAITING = "<code>Queued</code>"
     STATUS_FAILED = "Failed. Cleaning Download"
     STATUS_CANCELLED = "Cancelled"

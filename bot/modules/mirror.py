@@ -145,13 +145,13 @@ class MirrorListener(listeners.MirrorListeners):
 
     def onUploadComplete(self, link: str, size):
         with download_dict_lock:
-            msg = f'<b>File Name :</b> <code>{download_dict[self.uid].name()}</code>\n<b>Total Size : </b><code>{size}</code>'
+            msg = f'<b> File Name :</b> <code>{download_dict[self.uid].name()}</code>\n<b> Total Size : </b><code>{size}</code>'
             buttons = button_build.ButtonMaker()
             if SHORTENER is not None and SHORTENER_API is not None:
                 surl = requests.get('https://{}/api?api={}&url={}&format=text'.format(SHORTENER, SHORTENER_API, link)).text
-                buttons.buildbutton("GDRIVE Link", surl)
+                buttons.buildbutton(" GDRIVE Link ", surl)
             else:
-                buttons.buildbutton("GDRIVE Link", link)
+                buttons.buildbutton(" GDRIVE Link ", link)
             LOGGER.info(f'Done Uploading {download_dict[self.uid].name()}')
             if INDEX_URL is not None:
                 share_url = requests.utils.requote_uri(f'{INDEX_URL}/{download_dict[self.uid].name()}')
@@ -173,7 +173,7 @@ class MirrorListener(listeners.MirrorListeners):
             else:
                 uname = f'<a href="tg://user?id={self.message.from_user.id}">{self.message.from_user.first_name}</a>'
             if uname is not None:
-                msg += f'\n<b>Uploader :</b> {uname}Uploaded to the drive.</b>'
+                msg += f'\n<b> Uploader :</b> {uname}'
             try:
                 fs_utils.clean_download(download_dict[self.uid].path())
             except FileNotFoundError:
@@ -268,7 +268,7 @@ def _mirror(bot, update, isTar=False, extract=False):
             sendMessage(f"<b>★ Mega.nz Link Added To 📊 /{BotCommands.StatusCommand}\n★ Only 1 Download At A Time Otherwise Ban.\n★ Do Not Forget To Read Mega Download Rules.</b>", bot, update)
     else:
         ariaDlManager.add_download(link, f'{DOWNLOAD_DIR}/{listener.uid}/', listener, name)
-        sendMessage(f"<b>Torrent added - /{BotCommands.StatusCommand}</b>", bot, update)
+        sendMessage(f"<b>★ Your URI Link Has Been Added To 📊 /{BotCommands.StatusCommand}\n★ Max Mirror Size Is <u>60GB</u> In This Group.\n★ Do Not Forget To Read Group Rules On Pinned Messages.</b>", bot, update)
     if len(Interval) == 0:
         Interval.append(setInterval(DOWNLOAD_STATUS_UPDATE_INTERVAL, update_all_messages))
 

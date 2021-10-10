@@ -26,12 +26,12 @@ class AriaDownloadHelper(DownloadHelper):
         smsg, button = gdrive.drive_list(sname)
         if STOP_DUPLICATE_MIRROR:
             if smsg:
-                dl.getListener().onDownloadError(f"File Has Been Uploaded Previously Into The Team Drive 📁.\nKindly Search Next Time Before Mirroring, This Download Has Been Cancelled. ❌\n\n")
+                dl.getListener().onDownloadError(f"File already in drive. Searching for file...\n\n")
                 print(dl.getListener())
                 if button:
-                    sendMarkup("<b>Here are the search results:</b> 👇👇\n", dl.getListener().bot, dl.getListener().update, button)
+                    sendMarkup("<b>Here are the search results:</b> \n", dl.getListener().bot, dl.getListener().update, button)
                 else:
-                    sendMessage("<b>Here are the search results:</b> 👇👇\n" + smsg, dl.getListener().bot, dl.getListener().update)
+                    sendMessage("<b>Here are the search results:</b> \n" + smsg, dl.getListener().bot, dl.getListener().update)
                 aria2.remove([download])
             return
         update_all_messages()
@@ -57,13 +57,13 @@ class AriaDownloadHelper(DownloadHelper):
     def __onDownloadPause(self, api, gid):
         LOGGER.info(f"onDownloadPause: {gid}")
         dl = getDownloadByGid(gid)
-        dl.getListener().onDownloadError('★ 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗖𝗮𝗻𝗰𝗲𝗹𝗹𝗲𝗱 𝗕𝘆 𝗨𝘀𝗲𝗿!! ★')
+        dl.getListener().onDownloadError('Download cancelled by user.')
 
     @new_thread
     def __onDownloadStopped(self, api, gid):
         LOGGER.info(f"onDownloadStop: {gid}")
         dl = getDownloadByGid(gid)
-        if dl: dl.getListener().onDownloadError('★ 𝗠𝗔𝗚𝗡𝗘𝗧/𝗧𝗢𝗥𝗥𝗘𝗡𝗧 𝗟𝗜𝗡𝗞 𝗜𝗦 𝗗𝗘𝗔𝗗 ❌ ★')
+        if dl: dl.getListener().onDownloadError('Magnet/Torrent link is dead.')
 
     @new_thread
     def __onDownloadError(self, api, gid):

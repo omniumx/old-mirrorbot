@@ -17,10 +17,10 @@ class MirrorStatus:
     STATUS_UPLOADING = "<code>Uploading...</code>"
     STATUS_DOWNLOADING = "<code>Downloading...</code>"
     STATUS_WAITING = "<code>Queued</code>"
-    STATUS_FAILED = "Failed. Cleaning Download"
-    STATUS_CANCELLED = "Cancelled"
-    STATUS_ARCHIVING = "<code>Archiving</code>"
-    STATUS_EXTRACTING = "<code>Extractin</code>"
+    STATUS_FAILED = "Failed. Cleaning Download."
+    STATUS_CANCELLED = "Cancelled."
+    STATUS_ARCHIVING = "<code>Archiving...</code>"
+    STATUS_EXTRACTING = "<code>Extracting<.../code>"
 
 
 PROGRESS_MAX_SIZE = 100 // 8
@@ -110,7 +110,7 @@ def get_readable_message():
                 except:
                     pass
             if download.status() == MirrorStatus.STATUS_DOWNLOADING:
-                msg += f"\n<b>To cancel</b>: <code>/cancel {download.gid()}</code>"
+                msg += f"\n<b>To cancel</b>: <code>/{BotCommands.CancelCommand} {download.gid()}</code>"
             msg += "\n\n"
         return msg
 

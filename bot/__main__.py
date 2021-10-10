@@ -39,7 +39,7 @@ def stats(update, context):
             f'<b>Total Download : {recv}</b>\n' \
             f'<b>CPU : {cpuUsage}%</b>\n' \
             f'<b>RAM : {memory}%</b>\n' \
-            f'<b>DISK : {disk}%</b>\n'
+            f'<b>DISK : {disk}%</b>'
     sendMessage(stats, context.bot, update)
 
 

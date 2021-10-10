@@ -29,7 +29,7 @@ def stats(update, context):
     cpuUsage = psutil.cpu_percent(interval=0.5)
     memory = psutil.virtual_memory().percent
     disk = psutil.disk_usage('/').percent
-    stats = f'<b>「 🏴‍☠️ stazholicx 🏴‍☠️ 」</b>\n' \
+    stats = f'<b>「 🏴‍☠️ https://t.me/wanpissu 🏴‍☠️ 」</b>\n' \
             f'<b></b>\n' \
             f'<b>Bot Uptime : {currentTime}</b>\n' \
             f'<b>Total Disk Space : {total}</b>\n' \
